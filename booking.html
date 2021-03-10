@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="style.css" rel="stylesheet" />
+    <script>
+        function booking(){
+            document.getElementById("message").innerText =
+            "Reservation made!"
+        }
+
+        mybutton = document.getElementById("scrollBtn");
+            window.onscroll = function() {scrollFunction()};
+
+        function topFunction() {
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+    </head>
+    <body>
+
+        <button onclick="topFunction()" id="scrollBtn" title="Go to top">↑</button>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <a href="home.html"><img src = "HaveAByte.png" alt = "HaveAByte Logo"></a>
+        </div>
+        <section class="sandwich">
+            <h1>Booking</h1>
+            <p>
+                Due to limited space and tiresome travel routes, customers
+                are encouraged to schedule a visit.
+                Please use our online booking system to help ensure you have
+                the best experience at our café!<br><br>
+
+                For those interested in using one of our computers, feel
+                free to check the specifications at the bottom of the page.
+            </p>
+        </section>
+        <main class="menuSection" id="bookingIceImage">
+            <section>
+                <h2>Available Stations</h2>
+                <span class="menuSection">
+                    <div id="square"></div> Indicates an unavailable spot.
+                </span><br>
+                <table border=1 class="darkBlueBg">
+                    <tr>
+                        <th></th>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                        <th>D</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td>A1</td>
+                        <td>B1</td>
+                        <td>C1</td>
+                        <td class="normalBg">D1</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>A2</td>
+                        <td class="normalBg">B2</td>
+                        <td>C2</td>
+                        <td class="normalBg">D2</td>
+                    </tr>
+                    <tr><td colspan=5>hall</td>
+                    <tr>
+                        <th>3</th>
+                        <td>A3</td>
+                        <td>B3</td>
+                        <td class="normalBg">C3</td>
+                        <td>D3</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>A4</td>
+                        <td>B4</td>
+                        <td>C4</td>
+                        <td>D4</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h2>Form</h2>
+                <form>
+                    <input type="text" placeholder="First Name"/><br><br>
+                    <input type="text" placeholder="Last Name"/><br><br>
+                    Date: <input type="date" /><br><br>
+                    Please select your station:
+                    <select>
+                        <option>N/A</option>
+                        <option>B2</option>
+                        <option>C3</option>
+                        <option>D1</option>
+                        <option>D2</option>
+                    </select><br><br>
+                    <textarea placeholder="Additional Comments"></textarea>
+                    <br><br>
+                    <input type="button" value="Book Now" onclick="booking()"/>
+                </form>
+                <span id="message"></span>
+            </section>
+        </main>
+
+        <h2>specifications</h2>
+        <main class="menuSection">
+            <section>
+                <h3>Row 1</h3>
+                Dell Optiplex 9020 SFF
+                <ul>
+                    <li>Intel Core i7-4770 (Quad Core) @ 3.4 GHz</li>
+                    <li>16 GB DDR3 RAM</li>
+                    <li>NVIDIA GeForce 1030 GT 2GB DDR4</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Row 2</h3>
+                ASUS Strix GT15
+                <ul>
+                    <li>Intel Core i5-10400F (Hexa Core) @ 2.9 GHz</li>
+                    <li>16 GB DDR4 RAM</li>
+                    <li>NVIDIA GeForce GTX 1650 4GB DDR4</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Row 3</h3>
+                HP Omen
+                <ul>
+                    <li>AMD Ryzen 5 3600 (Hexa Core) @ 3.6 GHz</li>
+                    <li>16 GB DDR4 RAM</li>
+                    <li>NVIDIA GeForce RTX 2060 6GB DDR4</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Row 4</h3>
+                ASUS ROG Strix GL10CS
+                <ul>
+                    <li>Intel Core i7-9700K (Octa Core) @ 3.6 GHz</li>
+                    <li>16 GB DDR4 RAM</li>
+                    <li>NVIDIA GeForce RTX 2060 6GB DDR4</li>
+                </ul>
+            </section>
+        </main>
+        <section id="bookingCpuImage"></section>
+        <footer>
+          <div class='foot'>
+            <a href='#'><img src='icons/512_facebook.png' /></a>
+            <a href='#'><img src='icons/512_instagram.png' /></a>
+            <a href='#'><img src='icons/512_twitter.png' /></a>
+          </div>
+
+          <div class= "foot">
+            <ul class = footer-links>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class='foot'>Follow us <br> Have A Byte © 2020  </div>
+          <div class='foot'><a href="creds.html">creds</a></div>
+
+        </footer>
+    <body>
+</html>

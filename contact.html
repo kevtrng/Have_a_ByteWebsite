@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="style.css" rel="stylesheet" />
+    <script>
+      mybutton = document.getElementById("scrollBtn");
+      window.onscroll = function() {scrollFunction()};
+
+      function topFunction() {
+          document.documentElement.scrollTop = 0;
+      }
+
+  </script>
+    </head>
+    <body>
+
+      <button onclick="topFunction()" id="scrollBtn" title="Go to top">↑</button>
+
+        <nav>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="booking.html">Booking</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+          <a href="home.html"><img src = "HaveAByte.png" alt = "HaveAByte Logo"></a>
+        </div>
+        <h1>Contact Us</h1>
+        <div class="menuSection">
+            Got questions? Need help? Want to ask us about our political
+            stance? Feel free to reach out to us.
+        </div>
+        <section class="contactImage"></section>
+        <main class="menuSection">
+            <section class="cssGrid2">
+                <div class="cssGrid2label">Phone:</div>
+                <div>+3 141 592 6535</div>
+                <div class="cssGrid2label">Email:</div>
+                <div>haveabyte@pi.net</div>
+                <div class="cssGrid2label">Location:</div>
+                <div>the Middle of Nowhere</div>
+            </section>
+            <section>
+                <form style="width: 30vw">
+                    <input type="text" placeholder="Name"/><br><br>
+                    <input type="email" placeholder="Email"/><br><br>
+                    <textarea placeholder="Message"></textarea>
+                    <br><br>
+                    <input type="button" value="Send" onclick=""/>
+                </form>
+            </section>
+        </main>
+        <!--section class="contactImage"></section-->
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d131176.39638319102!2d-93.48682495485973!3d81.37904703055835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zODHCsDIzJzE1LjgiTiA5M8KwMjUnMjUuOSJX!5e0!3m2!1sen!2sca!4v1607263208180!5m2!1sen!2sca">
+            </iframe>
+        </section>
+        <section class="contactImage"></section>
+        <footer>
+          <div class='foot'>
+            <a href='#'><img src='icons/512_facebook.png' /></a>
+            <a href='#'><img src='icons/512_instagram.png' /></a>
+            <a href='#'><img src='icons/512_twitter.png' /></a>
+          </div>
+
+          <div class= "foot">
+            <ul class = footer-links>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="booking.html">Booking</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class='foot'>Follow us <br> Have A Byte © 2020  </div>
+          <div class='foot'><a href="creds.html">creds</a></div>
+        </footer>
+    <body>
+</html>

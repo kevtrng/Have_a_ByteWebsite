@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" />
+        <script>
+            mybutton = document.getElementById("scrollBtn");
+            window.onscroll = function() {scrollFunction()};
+
+            function topFunction() {
+                document.documentElement.scrollTop = 0;
+            }
+
+        </script>
+    </head>
+    <body>
+
+        <button onclick="topFunction()" id="scrollBtn" title="Go to top">↑</button>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+            <a href="home.html"><img src = "HaveAByte.png" alt = "HaveAByte Logo"></a>
+        </div>
+
+        <main>
+            <h1>Drinks</h1>
+            <section class="menuSection" >
+                <section id="drinksImage"></section>
+                <section>
+                    <h2>Coffee</h2>
+                    <ul>
+                        <li>Americano</li>
+                        <li>Cappuccino</li>
+                        <li>Cold Brew</li>
+                        <li>Drip</li>
+                        <li>Espresso</li>
+                        <li>Frappe</li>
+                        <li>Latte</li>
+                        <li>Mocha</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Tea</h2>
+                    <ul>
+                        <li>Black</li>
+                        <ul class='innerList'>
+                            <li>Ceylon</li>
+                            <li>Earl Grey</li>
+                            <li>English Breakfast</li>
+                        </ul>
+                        <li>Green</li>
+                        <ul class='innerList'>
+                            <li>Dragonwell</li>
+                            <li>Jasmine</li>
+                            <li>Matcha</li>
+                        </ul>
+                        <li>Oolong</li>
+                        <ul class='innerList'>
+                            <li>Alishan</li>
+                            <li>Elderflower</li>
+                            <li>Phoenix</li>
+                        </ul>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Water</h2>
+                    <ul>
+                        <li>Filtered</li>
+                        <li>Lemon</li>
+                        <li>A Nice Glass of Iced Salty Ocean Water</li>
+                    </ul>
+                </section>
+            </section>
+
+            <h1>Baked Goods</h1>
+            <section class="menuSection">
+                <section>
+                    <h2>Muffins</h2>
+                    <ul>
+                        <li>Banana</li>
+                        <li>Blueberry</li>
+                        <li>Chocolate</li>
+                        <li>Cranberry</li>
+                        <li>Oat</li>
+                        <li>Rasin</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Cookies</h2>
+                    <ul>
+                        <li>Almond</li>
+                        <li>Caramel Chocolate</li>
+                        <li>Chocolate</li>
+                        <li>Oat</li>
+                        <li>Peanut Butter</li>
+                        <li>Rasin</li>
+                        <li>Sugar</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Other</h2>
+                    <ul>
+                        <li>Cinnamon Roll</li>
+                        <li>Coconut Bun</li>
+                        <li>Croissant</li>
+                        <li>Banana Bread</li>
+                        <li>Pain au Chocolat</li>
+                    </ul>
+                </section>
+                <section id="bakedGoodsImage"></section>
+            </section>
+
+            <h1>Sandwiches</h1>
+            <div class="sandwich">Choose your bread, fillings (max 3),
+            and condiments (max 2):</div>
+            <section class='menuSection'>
+                <section>
+                    <h2>Bread</h2>
+                    <ul>
+                        <li>Baguette</li>
+                        <li>English Muffin</li>
+                        <li>Italian</li>
+                        <li>Sourdough</li>
+                        <li>White</li>
+                        <li>Whole Wheat</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Fruit/Vegetables</h2>
+                    <ul>
+                        <li>Bell Pepper</li>
+                        <li>Cucumber</li>
+                        <li>Lettuce</li>
+                        <li>Onion</li>
+                        <ul class='innerList'>
+                            <li>Red</li>
+                            <li>White</li>
+                            <li>Yellow</li>
+                        </ul>
+                        <li>Tomato</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Protein</h2>
+                    <ul>
+                        <li>Cheese</li>
+                        <ul class="innerList">
+                            <li>Brie</li>
+                            <li>Cheddar</li>
+                            <li>Mozzarella</li>
+                            <li>Swiss</li>
+                        </ul>
+                        <li>Chicken</li>
+                        <li>Crab</li>
+                        <li>Prosciutto</li>
+                        <li>Salami</li>
+                        <li>Tofu</li>
+                        <li>Tuna</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Condiments</h2>
+                    <ul>
+                        <li>Butter</li>
+                        <li>Ketchup</li>
+                        <li>Mayonaise</li>
+                        <li>Mustard</li>
+                        <li>Pesto</li>
+                    </ul>
+                </section>
+            </section>
+            <section id="sandwichImage"></section>
+        </main>
+        <footer>
+
+
+          <div class='foot'>
+            <a href='#'><img src='icons/512_facebook.png' /></a>
+            <a href='#'><img src='icons/512_instagram.png' /></a>
+            <a href='#'><img src='icons/512_twitter.png' /></a>
+          </div>
+
+
+          <div class= "foot">
+            <ul class = footer-links>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+          </div>
+
+
+          <div class='foot'>Follow us <br> Have A Byte © 2020  </div>
+          <div class='foot'><a href="creds.html">creds</a></div>
+        </footer>
+    </body>
+</html>

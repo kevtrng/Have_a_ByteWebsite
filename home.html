@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="style.css" rel="stylesheet" />
+    <script>
+        mybutton = document.getElementById("scrollBtn");
+        window.onscroll = function() {scrollFunction()};
+
+        function topFunction() {
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+    </head>
+    <body>
+
+        <button onclick="topFunction()" id="scrollBtn" title="Go to top">↑</button>
+
+        <nav>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="booking.html">Booking</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+            <a href="home.html"><img src = "HaveAByte.png" alt = "HaveAByte Logo"></a>
+        </div>
+
+
+        <main class = topSection>
+
+            <h1>About Us</h1>
+            <p>
+                Have A Byte opened in 2020. <br><br>
+                Have A Byte is not your ordinary cafe! We are a new and
+                exclusive internet cafe located in the artic ocean. <br><br>
+                This is
+                a cafe where you don't just grab a "byte" with your friends and hang.
+                Here at Have A Byte Cafe you can game and grab a "byte" with your friends
+                at the same time!<br><br>
+
+                We offer 4 different kinds of PC to choose from. On top
+                of that we offer amazing drinks and delicious food made with love!
+            </p>
+
+            <section id = "keyboardImg"></section>
+        </main>
+
+        <main class = notTopSection>
+            <div class = "booking">
+                <h2>Come and visit us! </h2>
+                <button type = "button" onclick='location.href="booking.html" '>BOOK HERE → </button>
+                <p>We encourage you to schedule <br> a visit!</p>
+                <section id = "GAMERBOY"></section>
+            </div>
+
+            <div class = "menu">
+                <h2>check out our menu! </h2>
+                <p> Take a look at our delicious drinks and food!<br>
+                Bone-apple-teeth.</p>
+                <button type = "button" onclick='location.href="menu.html" '>Menu →</button>
+                <section id = "sandWICH"></section>
+            </div>
+        </main>
+
+        <section id = "iceiceBABY">
+
+            <div class = "logo2"><img src = "HaveAByte.png" alt = "HaveAByte Logo"></div>
+        </section>
+
+
+
+        <footer>
+          <div class='foot'>
+            <a href='#'><img src='icons/512_facebook.png' /></a>
+            <a href='#'><img src='icons/512_instagram.png' /></a>
+            <a href='#'><img src='icons/512_twitter.png' /></a>
+          </div>
+
+          <div class= "foot">
+            <ul class = footer-links>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class='foot'>Follow us <br> Have A Byte © 2020  </div>
+          <div class='foot'><a href="creds.html">creds</a></div>
+        </footer>
+    <body>
+</html>
